@@ -107,7 +107,7 @@ const index = () => {
       padding="md"
       navbar={width>955? <Navbar  width={{ base: 300 }} bg="#012B90" m={'0px'}  p="xs">{<div className={styles.navigation}>
         <div style={{background:'#3468E4'}} className={styles.navbutton}>{language?"होम पेज":"Home"}</div>
-        <div className={styles.navbutton}>{language?"स्वास्थ्य जांच":"Health checkup"}</div>
+        <div onClick={()=>{router.push("/health")}} className={styles.navbutton}>{language?"स्वास्थ्य जांच":"Health checkup"}</div>
         <div onClick={()=>{router.push('/mycattles')}} className={styles.navbutton}>{language?"मेरी गायें":"My cattle"}</div>
         <div onClick={()=>{router.push('/meet')}} className={styles.navbutton}>{language?"एक डॉक्टर से मिलें":"Meet a doctor"}</div>
         <div onClick={()=>{router.push('/comman')}} className={styles.navbutton}>{language?"सामान्य रोग और उनके लक्षण":"common disease"}</div>
